@@ -1,15 +1,5 @@
 A warehouse company has recently started up and requires a database to keep track of its inventory. It needs to be able to keep information on products such as the product ID and name, the price, and the amount in stock. It will also need data on suppliers for products and data on sales. Having a database will allow the warehouse to be more successful, as having important data stored and readily accessible makes working for the business far more convenient.
 
-Entities:
-•	Product - Products currently in inventory
-•	Supplier - Suppliers that provide products
-•	Inventory - Details about how many products are in stock
-•	Purchase - Purchases from supplying companies
-•	Purchase-Item - Items purchased in an order from suppliers
-•	Sales - Purchases made by customers
-•	Sales-Item - Items purchased in an order by customers
-•	Warehouse - Details about warehouse products are stored in
-
 
 Entities and Attributes:
 
@@ -45,6 +35,15 @@ product_id
 supplier_id
 quantity_in_stock
 
+order
+
+order_id
+sales_id
+customer_id
+order_date
+total_order_value
+
+
 purchase
 
 purchase_id
@@ -53,7 +52,7 @@ purchase_date
 total_cost
 delivery_id
 
-purchase_Item
+purchase_item
 
 purchase_item_id
 purchase_id
@@ -68,13 +67,22 @@ customer_id
 sales_date
 total_revenue
 
-sales_Item
+sales_item
 
 sales_item_id
 sales_id
 product_id
 quantity
 revenue_per_item
+
+payment
+
+payment_id
+
+sales_id
+payment_date
+payment_amount
+payment_method
 
 warehouse
 
@@ -83,7 +91,7 @@ warehouse_name
 warehouse_city
 sq_ft_capacity
 
-reward-points
+reward_points
 
 reward_points_id
 contact_id
