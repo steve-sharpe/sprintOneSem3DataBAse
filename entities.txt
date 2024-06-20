@@ -17,15 +17,26 @@ product
 
 product_id
 product_name
-price
+sell_price
+cost_price
 amount_in_stock
 
 supplier
 
 supplier_id
 supplier_name
-contact_info
-address
+contact_id
+
+contact
+
+contact_id
+contact_name
+street
+city
+province
+postal_code
+email_address
+phone_number
 
 inventory
 
@@ -40,14 +51,14 @@ purchase_id
 supplier_id
 purchase_date
 total_cost
+delivery_id
 
-purchase-Item
+purchase_Item
 
 purchase_item_id
 purchase_id
 product_id
 quantity
-cost_per_item
 
 sales
 
@@ -57,7 +68,7 @@ customer_id
 sales_date
 total_revenue
 
-sales-Item
+sales_Item
 
 sales_item_id
 sales_id
@@ -69,20 +80,13 @@ warehouse
 
 warehouse_id
 warehouse_name
-location
-capacity
-
-customer
-
-customer_id
-customer_name
-contact_info
-address
+warehouse_city
+sq_ft_capacity
 
 reward-points
 
 reward_points_id
-customer_id
+contact_id
 points_earned
 points_redeemed
 
@@ -90,15 +94,25 @@ deliveries
 
 delivery_id
 warehouse_id
-supplier_id
+sales_id
 delivery_date
 total_items_delivered
+
+delivery_sales
+
+delivery_sales_id
+delivery_id
+sales_id
 
 salesperson
 
 salesperson_id
 salesperson_name
-contact_info
-address
+contact_id
 
+salesperson_sales
+
+salesperson_sales_id
+salesperson_id
+sales_id
 
