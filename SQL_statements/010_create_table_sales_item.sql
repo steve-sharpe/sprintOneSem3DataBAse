@@ -1,4 +1,4 @@
-CREATE TABLE public."Sales-Item"
+CREATE TABLE public.sales_item
 (
     sales_item_id integer NOT NULL,
     sales_id integer NOT NULL,
@@ -8,5 +8,5 @@ CREATE TABLE public."Sales-Item"
     PRIMARY KEY (sales_item_id)
 );
 
-ALTER TABLE IF EXISTS public."Sales-Item"
+ALTER TABLE IF EXISTS public.sales_item
     OWNER to postgres;

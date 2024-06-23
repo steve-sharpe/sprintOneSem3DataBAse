@@ -1,4 +1,4 @@
-CREATE TABLE public."Inventory"
+CREATE TABLE public.inventory
 (
     inventory_id integer NOT NULL,
     product_id integer NOT NULL,
@@ -7,5 +7,5 @@ CREATE TABLE public."Inventory"
     PRIMARY KEY (inventory_id)
 );
 
-ALTER TABLE IF EXISTS public."Inventory"
+ALTER TABLE IF EXISTS public.inventory
     OWNER to postgres;

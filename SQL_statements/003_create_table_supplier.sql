@@ -1,4 +1,4 @@
-CREATE TABLE public."Supplier"
+CREATE TABLE public.supplier
 (
     supplier_id integer NOT NULL,
     supplier_name character varying(50) NOT NULL,
@@ -6,5 +6,5 @@ CREATE TABLE public."Supplier"
     PRIMARY KEY (supplier_id)
 );
 
-ALTER TABLE IF EXISTS public."Supplier"
+ALTER TABLE IF EXISTS public.supplier
     OWNER to postgres;
