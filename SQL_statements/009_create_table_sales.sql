@@ -1,13 +1,12 @@
-CREATE TABLE public."Sales"
+CREATE TABLE public.sales
 (
     sales_id integer NOT NULL,
     salesperson_id integer NOT NULL,
-    contact_id integer NOT NULL,
+    customer_id integer NOT NULL,
     sales_date date NOT NULL,
     total_revenue money NOT NULL,
-    reward_points_id integer,
     PRIMARY KEY (sales_id)
 );
 
-ALTER TABLE IF EXISTS public."Sales"
+ALTER TABLE IF EXISTS public.sales
     OWNER to postgres;
